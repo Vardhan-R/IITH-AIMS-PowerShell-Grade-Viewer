@@ -8,7 +8,7 @@ Gets the user's grades from the [AIMS website for IITH](https://aims.iith.ac.in/
 
 ## Installation
 
-1. Download this folder (or just the [`get_all_grades.ps1`](https://github.com/Vardhan-R/IITH-AIMS-Exploitation/blob/main/grade_viewer/get_all_grades.ps1) file will suffice). [[1]](https://github.com/Vardhan-R/IITH-AIMS-Exploitation/tree/main/grade_viewer#notes)
+1. Download this repository (or just the [`get_all_grades.ps1`](https://github.com/Vardhan-R/IITH-AIMS-PowerShell-Grade-Viewer/blob/main/get_all_grades.ps1) file will suffice). [[1]](https://github.com/Vardhan-R/IITH-AIMS-PowerShell-Grade-Viewer/tree/main?tab=readme-ov-file#notes)
 
 ## Usage
 
@@ -17,7 +17,7 @@ Gets the user's grades from the [AIMS website for IITH](https://aims.iith.ac.in/
 1. Log in to [the AIMS website](https://aims.iith.ac.in/aims/).
 
 2. Follow the steps in the image below to obtain your `JSESSIONID` cookie.
-![cookie instructions](https://github.com/Vardhan-R/IITH-AIMS-Exploitation/blob/main/grade_viewer/images/JSESSIONID_cookie.png)
+![cookie instructions](https://github.com/Vardhan-R/IITH-AIMS-PowerShell-Grade-Viewer/blob/main/images/JSESSIONID_cookie.png)
 
 3. Make sure that your cookie doesn't expire (don't log out, nor get logged out of the AIMS website).
 
@@ -27,7 +27,7 @@ Gets the user's grades from the [AIMS website for IITH](https://aims.iith.ac.in/
 
 2. Navigate to the folder containing the file `get_all_grades.ps1`.
 
-3. Run `Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser -Force`. (This needs to be run only once per user, and PowerShell need not be run as administrator during future uses.) [[2]](https://github.com/Vardhan-R/IITH-AIMS-Exploitation/tree/main/grade_viewer#notes)
+3. Run `Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser -Force`. (This needs to be run only once per user, and PowerShell need not be run as administrator during future uses.) [[2]](https://github.com/Vardhan-R/IITH-AIMS-PowerShell-Grade-Viewer/tree/main?tab=readme-ov-file#notes)
 
 4. Run `.\get_all_grades.ps1 [YOUR COOKIE]`. For example, `.\get_all_grades.ps1 1D713515E379202AD3BD5E55C967076A`.
 
@@ -39,6 +39,6 @@ Gets the user's grades from the [AIMS website for IITH](https://aims.iith.ac.in/
 
 ## Notes
 
-1. [`get_all_grades.ps1`](https://github.com/Vardhan-R/IITH-AIMS-Exploitation/blob/main/grade_viewer/get_all_grades.ps1) renders the coloured text on all versions of PowerShell, whereas [`get_all_grades_7.ps1`](https://github.com/Vardhan-R/IITH-AIMS-Exploitation/blob/main/grade_viewer/get_all_grades_7.ps1) does the same on versions 7 or newer of PowerShell.
+1. [`get_all_grades.ps1`](https://github.com/Vardhan-R/IITH-AIMS-PowerShell-Grade-Viewer/blob/main/get_all_grades.ps1) renders the coloured text on all versions of PowerShell, whereas [`get_all_grades_7.ps1`](https://github.com/Vardhan-R/IITH-AIMS-PowerShell-Grade-Viewer/blob/main/get_all_grades_7.ps1) does the same on versions 7 or newer of PowerShell.
 
 2. You can read more about the execution policies [here](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.5).
